@@ -4,7 +4,7 @@ from flask import Flask, jsonify, request
 from model.recette_model import Recette
 import os
 app = Flask(__name__)
-
+"""Connexion a la base de donner"""
 def creer_connexion():
     return sqlite3.connect('API_Recette.dbf')
 
